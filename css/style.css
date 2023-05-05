@@ -4,14 +4,65 @@
     box-sizing: border-box;
 }
 
-#container{
-    margin: 20vh 30vw;
-    background-color: aqua;
+.hidden{
+    display: none;
 }
 
+#container{
+    margin: 20vh 30vw;
+    height: 60vh;
+    width: 40vw;
+    position: relative;
+}
 
+.image{
+    height: 60vh;
+    width: 40vw;
+    display: none;
+    background-size: contain;
+}
 
+.active{
+    display: block;
+}
 
+#red{
+    background-color: red;
+}
 
+#green{
+    background-color: green;
+}
 
+#blue{
+    background-color: blue;
+}
 
+#yellow{
+    background-color: yellow;
+}
+
+#violet{
+    background-color: blueviolet;
+}
+
+.arrow{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#su{
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%, 0)
+}
+
+#giu{
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, 0)
+}
