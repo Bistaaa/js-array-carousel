@@ -33,31 +33,31 @@ next.addEventListener("click",
     }
 );
 
-//seleziono freccia su
-const before = document.querySelector("#giu");
-console.log(next);
+// //seleziono freccia su
+// const before = document.querySelector("#giu");
+// console.log(next);
 
-//aggiungo il funzionamento al click della freccia su
-before.addEventListener("click",
-    function () {
+// //aggiungo il funzionamento al click della freccia su
+// before.addEventListener("click",
+//     function () {
 
-        //se sono al primo elemento faccio sparire la freccia
-        if (activeItem === (item.length - 5)) {
-            before.classList.add("hidden");
-        };
+//         //se sono al primo elemento faccio sparire la freccia
+//         if (activeItem === (item.length - 5)) {
+//             before.classList.add("hidden");
+//         };
 
-        //se non siamo al primo elemento vai avanti (torna indietro)
-        if (activeItem > (item.length - 4)) {
-           //togliamo la classe active
-            item[activeItem].classList.remove("active");
+//         //se non siamo al primo elemento vai avanti (torna indietro)
+//         if (activeItem > (item.length - 4)) {
+//            //togliamo la classe active
+//             item[activeItem].classList.remove("active");
 
-            //passiamo all'elemento successivo
-            activeItem++;
-            console.log("nuovo valore dell'array: " + activeItem);
+//             //passiamo all'elemento successivo
+//             activeItem++;
+//             console.log("nuovo valore dell'array: " + activeItem);
 
-            //aggiungere la classe active al nuovo elemento
-            item[activeItem].classList.add("active"); 
+//             //aggiungere la classe active al nuovo elemento
+//             item[activeItem].classList.add("active"); 
 
-        };
-    }
-);
+//         };
+//     }
+// );
